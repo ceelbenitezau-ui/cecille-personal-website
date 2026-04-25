@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dark Blue Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top, #0b1220, #1e3a8a);
+    color: #e0f2ff;
+    padding-top: 90px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(173, 216, 230, 0.08);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(125, 211, 252, 0.2);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar h2 {
+    font-family: 'Fira Code', monospace;
+    color: #7dd3fc;
+}
+
+.nav-links {
+    margin-top: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #bae6fd;
+    margin: 0 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: rgba(125, 211, 252, 0.25);
+}
+
+.nav-links a.active {
+    background: #38bdf8;
+    color: #0b1220;
+}
+
+/* SECTIONS */
+section {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARD */
+.card {
+    width: 320px;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(173, 216, 230, 0.08);
+    border: 1px solid rgba(125, 211, 252, 0.2);
+    backdrop-filter: blur(12px);
+    text-align: center;
+}
+
+/* PROFILE IMAGE FIX */
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #7dd3fc;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+h1, h2, h3 {
+    font-family: 'Fira Code', monospace;
+}
+
+h1 {
+    color: #93c5fd;
+}
+
+h2 {
+    color: #7dd3fc;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #cfe8ff;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ABOUT */
+.about-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-section ul {
+    list-style: none;
+    margin-top: 5px;
+}
+
+/* PROJECT CARD STYLE */
+.project-box {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(173, 216, 230, 0.08);
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>My Portfolio</h2>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+
+<section id="home">
+    <div class="card">
+      
+        <img src="pf.jpeg" class="profile" alt="Profile Image">
+
+        <h1>Cecille</h1>
+        <p>This is my simple portfolio website focused on technology, design, and web development. </p><a href="https://docs.google.com/document/d/1nQcE5yMcH4WG-zpeQpP6dITDw7rXRuAfw_QG19ngTSY/edit?usp=drivesdk">View My Resume</a>
+    </div>
+</section>
+
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>Hello! I'm a student focusing on computer and technology, especially Human-Computer Interaction (HCI).</p>
+
+    <div class="about-section">
+        <h3>🎓 Education</h3>
+        <ul>
+            <li>Bachelor of Science in Information Technology</li>
+        </ul>
+    </div>
+
+    <div class="about-section">
+        <h3>💡 Interests</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>Gaming</li>
+            <li>Graphic Design</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-box">
+        <p>I created focusing a PowerPoint presentation<p>
+             about Human-Computer Interactior on usability <p>
+                 and user-friendly design.</p><a href="https://docs.google.com/document/d/1-EVJspENHqXmzixnXmvszbZs1C9z1LcvTak_u7Kjuoo/edit?usp=drivesdk">My project</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+<p>Email: benitezcecille78@gmail.com</p>
+<p>Facebook Link: </p>
+
+</body>
+</html>
